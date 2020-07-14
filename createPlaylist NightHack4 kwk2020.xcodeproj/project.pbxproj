@@ -14,6 +14,9 @@
 		CE2C851924B7D58A00EB14D5 /* createPlaylist_NightHack4_kwk2020.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE2C851724B7D58A00EB14D5 /* createPlaylist_NightHack4_kwk2020.xcdatamodeld */; };
 		CE2C851B24B7D58D00EB14D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE2C851A24B7D58D00EB14D5 /* Assets.xcassets */; };
 		CE2C851E24B7D58D00EB14D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2C851C24B7D58D00EB14D5 /* LaunchScreen.storyboard */; };
+		CE398AB024B80FD400B06A14 /* blue1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE398AAF24B80FD400B06A14 /* blue1.swift */; };
+		CE68637524BE094E0050874C /* blue2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68637424BE094E0050874C /* blue2ViewController.swift */; };
+		CE68637724BE0AF00050874C /* blue3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68637624BE0AF00050874C /* blue3ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		CE2C851A24B7D58D00EB14D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE2C851D24B7D58D00EB14D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE2C851F24B7D58D00EB14D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE398AAF24B80FD400B06A14 /* blue1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blue1.swift; sourceTree = "<group>"; };
+		CE68637424BE094E0050874C /* blue2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blue2ViewController.swift; sourceTree = "<group>"; };
+		CE68637624BE0AF00050874C /* blue3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blue3ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +67,10 @@
 				CE2C850E24B7D58A00EB14D5 /* AppDelegate.swift */,
 				CE2C851024B7D58A00EB14D5 /* SceneDelegate.swift */,
 				CE2C851224B7D58A00EB14D5 /* ViewController.swift */,
+				CE398AAF24B80FD400B06A14 /* blue1.swift */,
 				CE2C851424B7D58A00EB14D5 /* Main.storyboard */,
+				CE68637624BE0AF00050874C /* blue3ViewController.swift */,
+				CE68637424BE094E0050874C /* blue2ViewController.swift */,
 				CE2C851A24B7D58D00EB14D5 /* Assets.xcassets */,
 				CE2C851C24B7D58D00EB14D5 /* LaunchScreen.storyboard */,
 				CE2C851F24B7D58D00EB14D5 /* Info.plist */,
@@ -144,7 +153,10 @@
 				CE2C851924B7D58A00EB14D5 /* createPlaylist_NightHack4_kwk2020.xcdatamodeld in Sources */,
 				CE2C851324B7D58A00EB14D5 /* ViewController.swift in Sources */,
 				CE2C850F24B7D58A00EB14D5 /* AppDelegate.swift in Sources */,
+				CE68637724BE0AF00050874C /* blue3ViewController.swift in Sources */,
+				CE68637524BE094E0050874C /* blue2ViewController.swift in Sources */,
 				CE2C851124B7D58A00EB14D5 /* SceneDelegate.swift in Sources */,
+				CE398AB024B80FD400B06A14 /* blue1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
