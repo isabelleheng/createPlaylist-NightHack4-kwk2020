@@ -1,5 +1,5 @@
 //
-//  blue3ViewController.swift
+//  blue4ViewController.swift
 //  createPlaylist NightHack4 kwk2020
 //
 //  Created by Isabelle Heng on 7/14/20.
@@ -8,47 +8,47 @@
 
 import UIKit
 
-class blue3ViewController: UIViewController {
+class blue4ViewController: UIViewController {
 
     
-    @IBOutlet var eternal: UIImageView!
+    @IBOutlet var winterFlower: UIImageView!
     
-    @IBOutlet var stayWithMe: UIImageView!
+    @IBOutlet var louderThanBombs: UIImageView!
     
-    @IBOutlet var stayHere: UIImageView!
+    
+    @IBOutlet var firstTimeInLove: UIImageView!
     
     @IBOutlet var nextPage: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        eternal.isHidden = true
-        stayWithMe.isHidden = true
-        stayHere.isHidden = true
+        winterFlower.isHidden = true
+        louderThanBombs.isHidden = true
+        firstTimeInLove.isHidden = true
         nextPage.isHidden = true
-        
 
         // Do any additional setup after loading the view.
     }
     
 
+    @IBAction func younha(_ sender: Any) {
+        winterFlower.isHidden = false
+        louderThanBombs.isHidden = true
+        firstTimeInLove.isHidden = true
+        nextPage.isHidden = false
+    }
+    
     @IBAction func bts(_ sender: Any) {
-        eternal.isHidden = false
-        stayWithMe.isHidden = true
-        stayHere.isHidden = true
+        winterFlower.isHidden = true
+        louderThanBombs.isHidden = false
+        firstTimeInLove.isHidden = true
         nextPage.isHidden = false
     }
     
-    @IBAction func goblin(_ sender: Any) {
-        eternal.isHidden = true
-        stayWithMe.isHidden = false
-        stayHere.isHidden = true
-        nextPage.isHidden = false
-    }
-    
-    @IBAction func gaho(_ sender: Any) {
-        eternal.isHidden = true
-        stayWithMe.isHidden = true
-        stayHere.isHidden = false
+    @IBAction func mugamak(_ sender: Any) {
+        winterFlower.isHidden = true
+        louderThanBombs.isHidden = true
+        firstTimeInLove.isHidden = false
         nextPage.isHidden = false
     }
     /*

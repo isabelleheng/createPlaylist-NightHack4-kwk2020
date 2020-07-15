@@ -1,5 +1,5 @@
 //
-//  blue3ViewController.swift
+//  yellow2ViewController.swift
 //  createPlaylist NightHack4 kwk2020
 //
 //  Created by Isabelle Heng on 7/14/20.
@@ -8,49 +8,48 @@
 
 import UIKit
 
-class blue3ViewController: UIViewController {
+class yellow2ViewController: UIViewController {
 
+    @IBOutlet var wings: UIImageView!
     
-    @IBOutlet var eternal: UIImageView!
+    @IBOutlet var iLand: UIImageView!
     
-    @IBOutlet var stayWithMe: UIImageView!
-    
-    @IBOutlet var stayHere: UIImageView!
+    @IBOutlet var leftAndRight: UIImageView!
     
     @IBOutlet var nextPage: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        eternal.isHidden = true
-        stayWithMe.isHidden = true
-        stayHere.isHidden = true
+        wings.isHidden = true
+        iLand.isHidden = true
+        leftAndRight.isHidden = true
         nextPage.isHidden = true
-        
 
         // Do any additional setup after loading the view.
     }
     
-
     @IBAction func bts(_ sender: Any) {
-        eternal.isHidden = false
-        stayWithMe.isHidden = true
-        stayHere.isHidden = true
+        wings.isHidden = false
+        iLand.isHidden = true
+        leftAndRight.isHidden = true
         nextPage.isHidden = false
     }
     
-    @IBAction func goblin(_ sender: Any) {
-        eternal.isHidden = true
-        stayWithMe.isHidden = false
-        stayHere.isHidden = true
+    @IBAction func IU(_ sender: Any) {
+        wings.isHidden = true
+        iLand.isHidden = false
+        leftAndRight.isHidden = true
         nextPage.isHidden = false
     }
     
-    @IBAction func gaho(_ sender: Any) {
-        eternal.isHidden = true
-        stayWithMe.isHidden = true
-        stayHere.isHidden = false
+   
+    @IBAction func seventeen(_ sender: Any) {
+        wings.isHidden = true
+        iLand.isHidden = true
+        leftAndRight.isHidden = false
         nextPage.isHidden = false
     }
+    
     /*
     // MARK: - Navigation
 

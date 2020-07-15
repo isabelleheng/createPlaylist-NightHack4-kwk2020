@@ -17,11 +17,15 @@ class blue2ViewController: UIViewController {
     
     @IBOutlet var uhgood: UIImageView!
     
+
+    @IBOutlet var nextPage: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         interlude.isHidden = true
         endingScene.isHidden = true
         uhgood.isHidden = true
+        nextPage.isHidden = true
 
         // Do any additional setup after loading the view.
     }
@@ -30,18 +34,21 @@ class blue2ViewController: UIViewController {
         interlude.isHidden = false
         endingScene.isHidden = true
         uhgood.isHidden = true
+        nextPage.isHidden = false
     }
     
     @IBAction func IU(_ sender: Any) {
         interlude.isHidden = true
         endingScene.isHidden = false
         uhgood.isHidden = true
+        nextPage.isHidden = false
     }
     
     @IBAction func RM(_ sender: Any) {
         interlude.isHidden = true
         endingScene.isHidden = true
         uhgood.isHidden = false
+        nextPage.isHidden = false
     }
     
     /*

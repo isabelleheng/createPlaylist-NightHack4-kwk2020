@@ -17,6 +17,21 @@
 		CE398AB024B80FD400B06A14 /* blue1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE398AAF24B80FD400B06A14 /* blue1.swift */; };
 		CE68637524BE094E0050874C /* blue2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68637424BE094E0050874C /* blue2ViewController.swift */; };
 		CE68637724BE0AF00050874C /* blue3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68637624BE0AF00050874C /* blue3ViewController.swift */; };
+		CE68639C24BE12F40050874C /* blue4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68639B24BE12F40050874C /* blue4ViewController.swift */; };
+		CE68639E24BE140A0050874C /* blue5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68639D24BE140A0050874C /* blue5ViewController.swift */; };
+		CE6863A024BE15160050874C /* blue6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68639F24BE15160050874C /* blue6ViewController.swift */; };
+		CE6863A224BE16580050874C /* yellow1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6863A124BE16580050874C /* yellow1ViewController.swift */; };
+		CE6863A424BE17280050874C /* yellow2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6863A324BE17280050874C /* yellow2ViewController.swift */; };
+		CE6863A624BE18110050874C /* yellow3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6863A524BE18110050874C /* yellow3ViewController.swift */; };
+		CE6863A824BE18FD0050874C /* yellow4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6863A724BE18FD0050874C /* yellow4ViewController.swift */; };
+		CE6863AA24BE19F00050874C /* yellow5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6863A924BE19F00050874C /* yellow5ViewController.swift */; };
+		CE6863AC24BE1B230050874C /* yellow6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6863AB24BE1B230050874C /* yellow6ViewController.swift */; };
+		CE6863AE24BE1B490050874C /* purple1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6863AD24BE1B490050874C /* purple1ViewController.swift */; };
+		CE6863B024BE1BEE0050874C /* purple2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6863AF24BE1BEE0050874C /* purple2ViewController.swift */; };
+		CE6863B224BE1CD70050874C /* purple3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6863B124BE1CD70050874C /* purple3ViewController.swift */; };
+		CE6863B424BE1DE70050874C /* purple4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6863B324BE1DE70050874C /* purple4ViewController.swift */; };
+		CE6863D924BE6F890050874C /* purple5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6863D824BE6F890050874C /* purple5ViewController.swift */; };
+		CE6863DB24BE704E0050874C /* purple6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6863DA24BE704E0050874C /* purple6ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +47,21 @@
 		CE398AAF24B80FD400B06A14 /* blue1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blue1.swift; sourceTree = "<group>"; };
 		CE68637424BE094E0050874C /* blue2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blue2ViewController.swift; sourceTree = "<group>"; };
 		CE68637624BE0AF00050874C /* blue3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blue3ViewController.swift; sourceTree = "<group>"; };
+		CE68639B24BE12F40050874C /* blue4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blue4ViewController.swift; sourceTree = "<group>"; };
+		CE68639D24BE140A0050874C /* blue5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blue5ViewController.swift; sourceTree = "<group>"; };
+		CE68639F24BE15160050874C /* blue6ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blue6ViewController.swift; sourceTree = "<group>"; };
+		CE6863A124BE16580050874C /* yellow1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yellow1ViewController.swift; sourceTree = "<group>"; };
+		CE6863A324BE17280050874C /* yellow2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yellow2ViewController.swift; sourceTree = "<group>"; };
+		CE6863A524BE18110050874C /* yellow3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yellow3ViewController.swift; sourceTree = "<group>"; };
+		CE6863A724BE18FD0050874C /* yellow4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yellow4ViewController.swift; sourceTree = "<group>"; };
+		CE6863A924BE19F00050874C /* yellow5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yellow5ViewController.swift; sourceTree = "<group>"; };
+		CE6863AB24BE1B230050874C /* yellow6ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yellow6ViewController.swift; sourceTree = "<group>"; };
+		CE6863AD24BE1B490050874C /* purple1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = purple1ViewController.swift; sourceTree = "<group>"; };
+		CE6863AF24BE1BEE0050874C /* purple2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = purple2ViewController.swift; sourceTree = "<group>"; };
+		CE6863B124BE1CD70050874C /* purple3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = purple3ViewController.swift; sourceTree = "<group>"; };
+		CE6863B324BE1DE70050874C /* purple4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = purple4ViewController.swift; sourceTree = "<group>"; };
+		CE6863D824BE6F890050874C /* purple5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = purple5ViewController.swift; sourceTree = "<group>"; };
+		CE6863DA24BE704E0050874C /* purple6ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = purple6ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,10 +97,25 @@
 				CE2C850E24B7D58A00EB14D5 /* AppDelegate.swift */,
 				CE2C851024B7D58A00EB14D5 /* SceneDelegate.swift */,
 				CE2C851224B7D58A00EB14D5 /* ViewController.swift */,
-				CE398AAF24B80FD400B06A14 /* blue1.swift */,
 				CE2C851424B7D58A00EB14D5 /* Main.storyboard */,
-				CE68637624BE0AF00050874C /* blue3ViewController.swift */,
+				CE398AAF24B80FD400B06A14 /* blue1.swift */,
 				CE68637424BE094E0050874C /* blue2ViewController.swift */,
+				CE68637624BE0AF00050874C /* blue3ViewController.swift */,
+				CE68639B24BE12F40050874C /* blue4ViewController.swift */,
+				CE68639D24BE140A0050874C /* blue5ViewController.swift */,
+				CE68639F24BE15160050874C /* blue6ViewController.swift */,
+				CE6863A124BE16580050874C /* yellow1ViewController.swift */,
+				CE6863A324BE17280050874C /* yellow2ViewController.swift */,
+				CE6863A524BE18110050874C /* yellow3ViewController.swift */,
+				CE6863A724BE18FD0050874C /* yellow4ViewController.swift */,
+				CE6863A924BE19F00050874C /* yellow5ViewController.swift */,
+				CE6863AB24BE1B230050874C /* yellow6ViewController.swift */,
+				CE6863AD24BE1B490050874C /* purple1ViewController.swift */,
+				CE6863AF24BE1BEE0050874C /* purple2ViewController.swift */,
+				CE6863B124BE1CD70050874C /* purple3ViewController.swift */,
+				CE6863B324BE1DE70050874C /* purple4ViewController.swift */,
+				CE6863D824BE6F890050874C /* purple5ViewController.swift */,
+				CE6863DA24BE704E0050874C /* purple6ViewController.swift */,
 				CE2C851A24B7D58D00EB14D5 /* Assets.xcassets */,
 				CE2C851C24B7D58D00EB14D5 /* LaunchScreen.storyboard */,
 				CE2C851F24B7D58D00EB14D5 /* Info.plist */,
@@ -150,13 +195,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE6863A624BE18110050874C /* yellow3ViewController.swift in Sources */,
 				CE2C851924B7D58A00EB14D5 /* createPlaylist_NightHack4_kwk2020.xcdatamodeld in Sources */,
 				CE2C851324B7D58A00EB14D5 /* ViewController.swift in Sources */,
+				CE6863AE24BE1B490050874C /* purple1ViewController.swift in Sources */,
 				CE2C850F24B7D58A00EB14D5 /* AppDelegate.swift in Sources */,
+				CE6863A424BE17280050874C /* yellow2ViewController.swift in Sources */,
+				CE6863D924BE6F890050874C /* purple5ViewController.swift in Sources */,
 				CE68637724BE0AF00050874C /* blue3ViewController.swift in Sources */,
+				CE6863A224BE16580050874C /* yellow1ViewController.swift in Sources */,
+				CE6863AC24BE1B230050874C /* yellow6ViewController.swift in Sources */,
 				CE68637524BE094E0050874C /* blue2ViewController.swift in Sources */,
 				CE2C851124B7D58A00EB14D5 /* SceneDelegate.swift in Sources */,
 				CE398AB024B80FD400B06A14 /* blue1.swift in Sources */,
+				CE68639C24BE12F40050874C /* blue4ViewController.swift in Sources */,
+				CE6863B224BE1CD70050874C /* purple3ViewController.swift in Sources */,
+				CE6863DB24BE704E0050874C /* purple6ViewController.swift in Sources */,
+				CE6863A824BE18FD0050874C /* yellow4ViewController.swift in Sources */,
+				CE6863AA24BE19F00050874C /* yellow5ViewController.swift in Sources */,
+				CE6863B024BE1BEE0050874C /* purple2ViewController.swift in Sources */,
+				CE6863B424BE1DE70050874C /* purple4ViewController.swift in Sources */,
+				CE68639E24BE140A0050874C /* blue5ViewController.swift in Sources */,
+				CE6863A024BE15160050874C /* blue6ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

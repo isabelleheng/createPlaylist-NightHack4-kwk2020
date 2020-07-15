@@ -1,5 +1,5 @@
 //
-//  blue3ViewController.swift
+//  blue5ViewController.swift
 //  createPlaylist NightHack4 kwk2020
 //
 //  Created by Isabelle Heng on 7/14/20.
@@ -8,49 +8,45 @@
 
 import UIKit
 
-class blue3ViewController: UIViewController {
-
+class blue5ViewController: UIViewController {
     
-    @IBOutlet var eternal: UIImageView!
-    
-    @IBOutlet var stayWithMe: UIImageView!
-    
-    @IBOutlet var stayHere: UIImageView!
-    
+    @IBOutlet var iMIssYou: UIImageView!
+    @IBOutlet var sorry: UIImageView!
+    @IBOutlet var ifYou: UIImageView!
     @IBOutlet var nextPage: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        eternal.isHidden = true
-        stayWithMe.isHidden = true
-        stayHere.isHidden = true
+        iMIssYou.isHidden = true
+        sorry.isHidden = true
+        ifYou.isHidden = true
         nextPage.isHidden = true
-        
 
         // Do any additional setup after loading the view.
     }
     
-
-    @IBAction func bts(_ sender: Any) {
-        eternal.isHidden = false
-        stayWithMe.isHidden = true
-        stayHere.isHidden = true
+    @IBAction func mamamoo(_ sender: Any) {
+        iMIssYou.isHidden = false
+        sorry.isHidden = true
+        ifYou.isHidden = true
         nextPage.isHidden = false
     }
     
-    @IBAction func goblin(_ sender: Any) {
-        eternal.isHidden = true
-        stayWithMe.isHidden = false
-        stayHere.isHidden = true
+    @IBAction func theRose(_ sender: Any) {
+        iMIssYou.isHidden = true
+        sorry.isHidden = false
+        ifYou.isHidden = true
         nextPage.isHidden = false
     }
     
-    @IBAction func gaho(_ sender: Any) {
-        eternal.isHidden = true
-        stayWithMe.isHidden = true
-        stayHere.isHidden = false
+    @IBAction func bigbang(_ sender: Any) {
+        iMIssYou.isHidden = true
+        sorry.isHidden = true
+        ifYou.isHidden = false
         nextPage.isHidden = false
     }
+    
+    
     /*
     // MARK: - Navigation
 

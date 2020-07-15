@@ -1,5 +1,5 @@
 //
-//  blue3ViewController.swift
+//  purple1ViewController.swift
 //  createPlaylist NightHack4 kwk2020
 //
 //  Created by Isabelle Heng on 7/14/20.
@@ -8,49 +8,48 @@
 
 import UIKit
 
-class blue3ViewController: UIViewController {
+class purple1ViewController: UIViewController {
 
+    @IBOutlet var dope: UIImageView!
     
-    @IBOutlet var eternal: UIImageView!
+    @IBOutlet var cherryBomb: UIImageView!
     
-    @IBOutlet var stayWithMe: UIImageView!
-    
-    @IBOutlet var stayHere: UIImageView!
+    @IBOutlet var feelSpecial: UIImageView!
     
     @IBOutlet var nextPage: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        eternal.isHidden = true
-        stayWithMe.isHidden = true
-        stayHere.isHidden = true
+        dope.isHidden = true
+        cherryBomb.isHidden = true
+        feelSpecial.isHidden = true
         nextPage.isHidden = true
-        
 
         // Do any additional setup after loading the view.
     }
     
-
+    
     @IBAction func bts(_ sender: Any) {
-        eternal.isHidden = false
-        stayWithMe.isHidden = true
-        stayHere.isHidden = true
+        dope.isHidden = false
+        cherryBomb.isHidden = true
+        feelSpecial.isHidden = true
+        nextPage.isHidden = false
+
+    }
+    
+    @IBAction func nct(_ sender: Any) {
+        dope.isHidden = true
+        cherryBomb.isHidden = false
+        feelSpecial.isHidden = true
+        nextPage.isHidden = false
+    }
+    @IBAction func twice(_ sender: Any){
+        dope.isHidden = true
+        cherryBomb.isHidden = true
+        feelSpecial.isHidden = false
         nextPage.isHidden = false
     }
     
-    @IBAction func goblin(_ sender: Any) {
-        eternal.isHidden = true
-        stayWithMe.isHidden = false
-        stayHere.isHidden = true
-        nextPage.isHidden = false
-    }
-    
-    @IBAction func gaho(_ sender: Any) {
-        eternal.isHidden = true
-        stayWithMe.isHidden = true
-        stayHere.isHidden = false
-        nextPage.isHidden = false
-    }
     /*
     // MARK: - Navigation
 

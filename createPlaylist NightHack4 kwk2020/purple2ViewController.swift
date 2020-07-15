@@ -1,5 +1,5 @@
 //
-//  blue3ViewController.swift
+//  purple2ViewController.swift
 //  createPlaylist NightHack4 kwk2020
 //
 //  Created by Isabelle Heng on 7/14/20.
@@ -8,47 +8,43 @@
 
 import UIKit
 
-class blue3ViewController: UIViewController {
+class purple2ViewController: UIViewController {
 
+    @IBOutlet var notToday: UIImageView!
     
-    @IBOutlet var eternal: UIImageView!
-    
-    @IBOutlet var stayWithMe: UIImageView!
-    
-    @IBOutlet var stayHere: UIImageView!
+    @IBOutlet var loveShot: UIImageView!
+    @IBOutlet var boombayah: UIImageView!
     
     @IBOutlet var nextPage: UIButton!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        eternal.isHidden = true
-        stayWithMe.isHidden = true
-        stayHere.isHidden = true
+        notToday.isHidden = true
+        loveShot.isHidden = true
+        boombayah.isHidden = true
         nextPage.isHidden = true
-        
 
         // Do any additional setup after loading the view.
     }
     
 
     @IBAction func bts(_ sender: Any) {
-        eternal.isHidden = false
-        stayWithMe.isHidden = true
-        stayHere.isHidden = true
+        notToday.isHidden = false
+        loveShot.isHidden = true
+        boombayah.isHidden = true
         nextPage.isHidden = false
     }
     
-    @IBAction func goblin(_ sender: Any) {
-        eternal.isHidden = true
-        stayWithMe.isHidden = false
-        stayHere.isHidden = true
+    @IBAction func exo(_ sender: Any) {
+        notToday.isHidden = true
+        loveShot.isHidden = false
+        boombayah.isHidden = true
         nextPage.isHidden = false
     }
     
-    @IBAction func gaho(_ sender: Any) {
-        eternal.isHidden = true
-        stayWithMe.isHidden = true
-        stayHere.isHidden = false
+    @IBAction func bp(_ sender: Any) {
+        notToday.isHidden = true
+        loveShot.isHidden = true
+        boombayah.isHidden = false
         nextPage.isHidden = false
     }
     /*

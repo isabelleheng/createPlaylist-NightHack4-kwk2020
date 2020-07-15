@@ -120,10 +120,10 @@
             </objects>
             <point key="canvasLocation" x="732" y="129"/>
         </scene>
-        <!--View Controller-->
+        <!--Yellow1 View Controller-->
         <scene sceneID="IiP-kY-tTF">
             <objects>
-                <viewController id="49L-TU-ZlN" sceneMemberID="viewController">
+                <viewController id="49L-TU-ZlN" customClass="yellow1ViewController" customModule="createPlaylist_NightHack4_kwk2020" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fi6-w2-4vc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -148,23 +148,45 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="32"/>
                                 <state key="normal" title="Yesterday By: Block B"/>
+                                <connections>
+                                    <action selector="blockB:" destination="49L-TU-ZlN" eventType="touchUpInside" id="HVD-SC-rBx"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oz3-16-DUF">
                                 <rect key="frame" x="35" y="348" width="206" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="32"/>
                                 <state key="normal" title="BBIBBI By: IU"/>
+                                <connections>
+                                    <action selector="IU:" destination="49L-TU-ZlN" eventType="touchUpInside" id="DPT-Wr-Qdk"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JM4-Cn-8Re">
                                 <rect key="frame" x="30" y="499" width="364" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="32"/>
                                 <state key="normal" title="Happiness By: Red Velvet"/>
+                                <connections>
+                                    <action selector="redVelvet:" destination="49L-TU-ZlN" eventType="touchUpInside" id="ubO-Bg-fEY"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ei6-Dc-CPE">
-                                <rect key="frame" x="339" y="53" width="33" height="45"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Block_B_Yesterday_cover_art" translatesAutoresizingMaskIntoConstraints="NO" id="qXe-5R-AVX">
+                                <rect key="frame" x="-8" y="599" width="240" height="184"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="chevron.right" catalog="system"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IU_–_Bbibbi" translatesAutoresizingMaskIntoConstraints="NO" id="Jda-DK-vtL">
+                                <rect key="frame" x="-8" y="599" width="240" height="184"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Red_Velvet_-_Happiness" translatesAutoresizingMaskIntoConstraints="NO" id="zvv-J4-GNE">
+                                <rect key="frame" x="-8" y="599" width="240" height="184"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ei6-Dc-CPE">
+                                <rect key="frame" x="251" y="660" width="128" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                <state key="normal" title="N-E-X-T--&gt;"/>
                                 <connections>
                                     <segue destination="3w0-TT-y3i" kind="show" id="a0y-l0-JGp"/>
                                 </connections>
@@ -174,15 +196,21 @@
                         <viewLayoutGuide key="safeArea" id="f8g-VX-5oM"/>
                     </view>
                     <navigationItem key="navigationItem" id="VH8-eo-S4m"/>
+                    <connections>
+                        <outlet property="bbibbi" destination="Jda-DK-vtL" id="nVN-z1-HKy"/>
+                        <outlet property="happiness" destination="zvv-J4-GNE" id="RKa-nj-hy5"/>
+                        <outlet property="nextPage" destination="ei6-Dc-CPE" id="KTa-nJ-fxF"/>
+                        <outlet property="yesterday" destination="qXe-5R-AVX" id="eO9-k0-hwn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Gx-ry-TTg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1509" y="286"/>
+            <point key="canvasLocation" x="1508.6956521739132" y="285.9375"/>
         </scene>
-        <!--View Controller-->
+        <!--Purple1 View Controller-->
         <scene sceneID="mFX-QW-5pl">
             <objects>
-                <viewController id="eGV-EE-jwI" sceneMemberID="viewController">
+                <viewController id="eGV-EE-jwI" customClass="purple1ViewController" customModule="createPlaylist_NightHack4_kwk2020" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Yue-Lh-i0G">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -202,58 +230,82 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XCO-F1-98V">
-                                <rect key="frame" x="332" y="55" width="33" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="chevron.right" catalog="system"/>
-                                <connections>
-                                    <segue destination="M8J-Mm-MGZ" kind="show" id="uHe-uw-OxQ"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="45S-PL-2X3">
                                 <rect key="frame" x="27" y="233" width="205" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="32"/>
                                 <state key="normal" title="Dope By: BTS"/>
+                                <connections>
+                                    <action selector="bts:" destination="gIS-hk-pb9" eventType="touchUpInside" id="PQ2-bQ-uFl"/>
+                                    <action selector="bts:" destination="eGV-EE-jwI" eventType="touchUpInside" id="oOV-Bt-ROb"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Am0-Ge-VJW">
                                 <rect key="frame" x="27" y="391" width="375" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="32"/>
                                 <state key="normal" title="Cherry Bomb  By: NCT 127"/>
+                                <connections>
+                                    <action selector="nct:" destination="gIS-hk-pb9" eventType="touchUpInside" id="fkU-dv-T3f"/>
+                                    <action selector="nct:" destination="eGV-EE-jwI" eventType="touchUpInside" id="kua-Ag-cGY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0tf-kF-kTh">
                                 <rect key="frame" x="37" y="543" width="309" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="32"/>
                                 <state key="normal" title="Feel Special By: Twice"/>
+                                <connections>
+                                    <action selector="twice:" destination="eGV-EE-jwI" eventType="touchUpInside" id="tya-tF-mGI"/>
+                                    <action selector="twice:" destination="gIS-hk-pb9" eventType="touchUpInside" id="wmM-vU-6g0"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dope" translatesAutoresizingMaskIntoConstraints="NO" id="n6R-f3-fXE">
+                                <rect key="frame" x="9" y="613" width="240" height="184"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cherry bomb" translatesAutoresizingMaskIntoConstraints="NO" id="LaN-86-IR0">
+                                <rect key="frame" x="9" y="613" width="240" height="184"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Twice_-_Feel_Special" translatesAutoresizingMaskIntoConstraints="NO" id="3FM-5I-peP">
+                                <rect key="frame" x="9" y="613" width="240" height="184"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XCO-F1-98V">
+                                <rect key="frame" x="232" y="683" width="114" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                <state key="normal" title="N-E-X-T--&gt;"/>
+                                <connections>
+                                    <segue destination="M8J-Mm-MGZ" kind="show" id="uHe-uw-OxQ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.80334974315068497" green="0.69585665825935783" blue="0.99438326326135085" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="lcT-mL-oc7"/>
                     </view>
                     <navigationItem key="navigationItem" id="6fr-nE-Sih"/>
+                    <connections>
+                        <outlet property="cherryBomb" destination="LaN-86-IR0" id="bOD-RZ-C5E"/>
+                        <outlet property="dope" destination="n6R-f3-fXE" id="Cmx-MA-3Ta"/>
+                        <outlet property="feelSpecial" destination="3FM-5I-peP" id="FKe-Xn-JZI"/>
+                        <outlet property="nextPage" destination="XCO-F1-98V" id="5lL-HV-V7e"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="afx-M3-nKd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="gIS-hk-pb9" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1516" y="944"/>
+            <point key="canvasLocation" x="1515.9420289855075" y="943.52678571428567"/>
         </scene>
-        <!--View Controller-->
+        <!--Purple2 View Controller-->
         <scene sceneID="BAU-AY-cdb">
             <objects>
-                <viewController id="M8J-Mm-MGZ" sceneMemberID="viewController">
+                <viewController id="M8J-Mm-MGZ" customClass="purple2ViewController" customModule="createPlaylist_NightHack4_kwk2020" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8qf-BZ-MiC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oMZ-9h-a7D">
-                                <rect key="frame" x="361" y="53" width="33" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="chevron.right" catalog="system"/>
-                                <connections>
-                                    <segue destination="5vg-TX-rV4" kind="show" id="p0f-Ap-jgQ"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bNg-6s-wEu">
                                 <rect key="frame" x="95" y="48" width="189" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -274,45 +326,73 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="32"/>
                                 <state key="normal" title="Not Today By: BTS"/>
+                                <connections>
+                                    <action selector="bts:" destination="M8J-Mm-MGZ" eventType="touchUpInside" id="BkQ-1h-UUd"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gtf-bI-OQy">
                                 <rect key="frame" x="46" y="373" width="283" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="32"/>
                                 <state key="normal" title="Love Shot By: EXO"/>
+                                <connections>
+                                    <action selector="exo:" destination="M8J-Mm-MGZ" eventType="touchUpInside" id="5nv-fL-Lx8"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bCC-8a-MwS">
                                 <rect key="frame" x="29" y="532" width="365" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="25"/>
                                 <state key="normal" title="BOOMBAYAH By: BLACKPINK"/>
+                                <connections>
+                                    <action selector="bp:" destination="M8J-Mm-MGZ" eventType="touchUpInside" id="D1z-Je-hDV"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="not today" translatesAutoresizingMaskIntoConstraints="NO" id="HB3-Ah-BAR">
+                                <rect key="frame" x="-6" y="610" width="240" height="184"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="love shot" translatesAutoresizingMaskIntoConstraints="NO" id="fTz-27-bIs">
+                                <rect key="frame" x="-49" y="610" width="333" height="198"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="boombayah" translatesAutoresizingMaskIntoConstraints="NO" id="img-nB-haX">
+                                <rect key="frame" x="-6" y="610" width="240" height="184"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oMZ-9h-a7D">
+                                <rect key="frame" x="210" y="665" width="130" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                <state key="normal" title="N-E-X-T--&gt;"/>
+                                <connections>
+                                    <segue destination="5vg-TX-rV4" kind="show" id="p0f-Ap-jgQ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.80334974319999997" green="0.69585665829999999" blue="0.99438326330000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="ci0-qT-C37"/>
                     </view>
                     <navigationItem key="navigationItem" id="hI7-ni-mWA"/>
+                    <connections>
+                        <outlet property="boombayah" destination="img-nB-haX" id="YYE-PW-Rnv"/>
+                        <outlet property="loveShot" destination="fTz-27-bIs" id="Wx4-0E-WC5"/>
+                        <outlet property="nextPage" destination="oMZ-9h-a7D" id="tzF-zw-pfU"/>
+                        <outlet property="notToday" destination="HB3-Ah-BAR" id="nwq-CB-j9C"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PAu-HQ-afS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2186.9565217391305" y="943.52678571428567"/>
         </scene>
-        <!--View Controller-->
+        <!--Purple3 View Controller-->
         <scene sceneID="dzb-rR-iEw">
             <objects>
-                <viewController id="5vg-TX-rV4" sceneMemberID="viewController">
+                <viewController id="5vg-TX-rV4" customClass="purple3ViewController" customModule="createPlaylist_NightHack4_kwk2020" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="M5g-Ao-JWO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="39v-PL-UF2">
-                                <rect key="frame" x="340" y="63" width="33" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="chevron.right" catalog="system"/>
-                                <connections>
-                                    <segue destination="v9G-Ia-c3X" kind="show" id="Cx3-55-VlH"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nGC-Ru-BZ3">
                                 <rect key="frame" x="119" y="66" width="189" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -333,33 +413,69 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="32"/>
                                 <state key="normal" title="Very Nice By: SEVENTEEN"/>
+                                <connections>
+                                    <action selector="seventeen:" destination="5vg-TX-rV4" eventType="touchUpInside" id="XvE-Qz-j1u"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9LN-Px-yMA">
                                 <rect key="frame" x="31" y="378" width="365" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="32"/>
                                 <state key="normal" title="Energetic By: Wanna One"/>
+                                <connections>
+                                    <action selector="wannaOne:" destination="5vg-TX-rV4" eventType="touchUpInside" id="g7D-y1-GQW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ppn-Y2-hx2">
                                 <rect key="frame" x="48" y="535" width="339" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="32"/>
                                 <state key="normal" title="Levantar By: Stray Kids"/>
+                                <connections>
+                                    <action selector="strayKids:" destination="5vg-TX-rV4" eventType="touchUpInside" id="jGQ-jQ-HAI"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="very nice" translatesAutoresizingMaskIntoConstraints="NO" id="ruh-pI-CK7">
+                                <rect key="frame" x="0.0" y="605" width="240" height="184"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="energetic" translatesAutoresizingMaskIntoConstraints="NO" id="rqG-oP-Mpe">
+                                <rect key="frame" x="0.0" y="605" width="240" height="184"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="levantar" translatesAutoresizingMaskIntoConstraints="NO" id="zeG-At-6xP">
+                                <rect key="frame" x="0.0" y="605" width="240" height="184"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="39v-PL-UF2">
+                                <rect key="frame" x="221" y="656" width="121" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                <state key="normal" title="N-E-X-T--&gt;"/>
+                                <connections>
+                                    <segue destination="v9G-Ia-c3X" kind="show" id="Cx3-55-VlH"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.80334974319999997" green="0.69585665829999999" blue="0.99438326330000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="QS9-Ap-367"/>
                     </view>
                     <navigationItem key="navigationItem" id="4Oi-Ps-PY5"/>
+                    <connections>
+                        <outlet property="energetic" destination="rqG-oP-Mpe" id="s9w-J5-7Ph"/>
+                        <outlet property="levantar" destination="zeG-At-6xP" id="uPv-vw-DPZ"/>
+                        <outlet property="nextPage" destination="39v-PL-UF2" id="gUF-ed-TIy"/>
+                        <outlet property="veryNice" destination="ruh-pI-CK7" id="mzN-Rq-MhH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rr3-6f-V6a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2861" y="944"/>
+            <point key="canvasLocation" x="2860.8695652173915" y="943.52678571428567"/>
         </scene>
-        <!--View Controller-->
+        <!--Purple4 View Controller-->
         <scene sceneID="pY5-qi-0ll">
             <objects>
-                <viewController id="v9G-Ia-c3X" sceneMemberID="viewController">
+                <viewController id="v9G-Ia-c3X" customClass="purple4ViewController" customModule="createPlaylist_NightHack4_kwk2020" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6Pf-fp-FdV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -384,23 +500,46 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="32"/>
                                 <state key="normal" title="HIP By: MAMAMOO"/>
+                                <connections>
+                                    <action selector="mamamoo:" destination="v9G-Ia-c3X" eventType="touchUpInside" id="iGf-zj-Ofo"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqa-pf-XjU">
                                 <rect key="frame" x="27" y="374" width="367" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="32"/>
                                 <state key="normal" title="Bang Bang By: BIGBANG"/>
+                                <connections>
+                                    <action selector="bigBang:" destination="v9G-Ia-c3X" eventType="touchUpInside" id="dc1-WF-H0y"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6SG-Se-V0T">
-                                <rect key="frame" x="44" y="544" width="327" height="62"/>
+                                <rect key="frame" x="22" y="544" width="349" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="32"/>
                                 <state key="normal" title="BTS Cypher 4 By: BTS"/>
+                                <connections>
+                                    <action selector="bigBang:" destination="v9G-Ia-c3X" eventType="touchUpInside" id="NDz-hm-LnU"/>
+                                    <action selector="bts:" destination="v9G-Ia-c3X" eventType="touchUpInside" id="bRd-0f-2U9"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kuR-bT-cG3">
-                                <rect key="frame" x="350" y="45" width="33" height="45"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hip" translatesAutoresizingMaskIntoConstraints="NO" id="Wl6-ZG-c3P">
+                                <rect key="frame" x="0.0" y="614" width="240" height="184"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="chevron.right" catalog="system"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bang" translatesAutoresizingMaskIntoConstraints="NO" id="jFD-ky-mKH">
+                                <rect key="frame" x="0.0" y="614" width="240" height="184"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BTS,_Wings" translatesAutoresizingMaskIntoConstraints="NO" id="PAU-6R-Opi">
+                                <rect key="frame" x="0.0" y="614" width="240" height="184"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kuR-bT-cG3">
+                                <rect key="frame" x="220" y="665" width="121" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                <state key="normal" title="N-E-X-T--&gt;"/>
                                 <connections>
                                     <segue destination="cqD-yF-6A1" kind="show" id="7tH-RA-mnF"/>
                                 </connections>
@@ -410,27 +549,25 @@
                         <viewLayoutGuide key="safeArea" id="YlM-2P-igG"/>
                     </view>
                     <navigationItem key="navigationItem" id="Mw3-OH-e4r"/>
+                    <connections>
+                        <outlet property="bangBang" destination="jFD-ky-mKH" id="lRa-UH-7dK"/>
+                        <outlet property="cypher" destination="PAU-6R-Opi" id="wTu-Mh-Ups"/>
+                        <outlet property="hip" destination="Wl6-ZG-c3P" id="dUz-2Q-ElD"/>
+                        <outlet property="nextPage" destination="kuR-bT-cG3" id="Unb-I5-1Y5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AAI-FU-jDJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3596" y="944"/>
+            <point key="canvasLocation" x="3595.652173913044" y="943.52678571428567"/>
         </scene>
-        <!--View Controller-->
+        <!--Purple5 View Controller-->
         <scene sceneID="M2W-AP-qlY">
             <objects>
-                <viewController id="cqD-yF-6A1" sceneMemberID="viewController">
+                <viewController id="cqD-yF-6A1" customClass="purple5ViewController" customModule="createPlaylist_NightHack4_kwk2020" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ecE-OC-zAz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IOZ-ZL-0S2">
-                                <rect key="frame" x="355" y="44" width="33" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="chevron.right" catalog="system"/>
-                                <connections>
-                                    <segue destination="Wx2-16-z33" kind="show" id="jGd-4o-o9O"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cq8-j9-ON6">
                                 <rect key="frame" x="110" y="35" width="189" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -451,28 +588,64 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="32"/>
                                 <state key="normal" title="MIC By:  BTS"/>
+                                <connections>
+                                    <action selector="bts:" destination="cqD-yF-6A1" eventType="touchUpInside" id="3Z6-8m-QSW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h2W-qv-t9G">
                                 <rect key="frame" x="44" y="366" width="321" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="32"/>
                                 <state key="normal" title="Shine BY: PENTAGON"/>
+                                <connections>
+                                    <action selector="pentagon:" destination="cqD-yF-6A1" eventType="touchUpInside" id="ZkI-zE-cdF"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ezj-FH-dQd">
                                 <rect key="frame" x="62" y="526" width="292" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="32"/>
                                 <state key="normal" title="Outro: Tear By: BTS"/>
+                                <connections>
+                                    <action selector="bts1:" destination="cqD-yF-6A1" eventType="touchUpInside" id="Aeo-2S-lVV"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="her" translatesAutoresizingMaskIntoConstraints="NO" id="Pww-IA-255">
+                                <rect key="frame" x="0.0" y="624" width="240" height="184"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pentagon" translatesAutoresizingMaskIntoConstraints="NO" id="HYS-EJ-Yeu">
+                                <rect key="frame" x="0.0" y="624" width="240" height="184"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Love_Yourself_Tear_Cover" translatesAutoresizingMaskIntoConstraints="NO" id="z0I-mc-o38">
+                                <rect key="frame" x="0.0" y="624" width="240" height="184"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IOZ-ZL-0S2">
+                                <rect key="frame" x="231" y="694" width="112" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                <state key="normal" title="N-E-X-T--&gt;"/>
+                                <connections>
+                                    <segue destination="Wx2-16-z33" kind="show" id="jGd-4o-o9O"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.80334974319999997" green="0.69585665829999999" blue="0.99438326330000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="Qlq-n4-Exj"/>
                     </view>
                     <navigationItem key="navigationItem" id="4EC-pQ-Z2h"/>
+                    <connections>
+                        <outlet property="mic" destination="Pww-IA-255" id="U2x-i7-cxN"/>
+                        <outlet property="nextPage" destination="IOZ-ZL-0S2" id="PIB-m1-W7C"/>
+                        <outlet property="shine" destination="HYS-EJ-Yeu" id="GxN-IY-OCH"/>
+                        <outlet property="tear" destination="z0I-mc-o38" id="llI-v0-VwM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bCt-Lm-Ces" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4280" y="944"/>
+            <point key="canvasLocation" x="4279.7101449275369" y="943.52678571428567"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="xL9-RO-cjM">
@@ -508,22 +681,14 @@
             </objects>
             <point key="canvasLocation" x="4983" y="944"/>
         </scene>
-        <!--View Controller-->
+        <!--Yellow2 View Controller-->
         <scene sceneID="aNr-92-3Td">
             <objects>
-                <viewController id="3w0-TT-y3i" sceneMemberID="viewController">
+                <viewController id="3w0-TT-y3i" customClass="yellow2ViewController" customModule="createPlaylist_NightHack4_kwk2020" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5UP-4g-kmw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LE8-0P-xnE">
-                                <rect key="frame" x="353" y="53" width="33" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="chevron.right" catalog="system"/>
-                                <connections>
-                                    <segue destination="DuN-4e-5dc" kind="show" id="rp4-zX-vw8"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f57-ra-YjC">
                                 <rect key="frame" x="113" y="43" width="189" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -544,45 +709,73 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="32"/>
                                 <state key="normal" title="Outro: Wings By: BTS"/>
+                                <connections>
+                                    <action selector="bts:" destination="3w0-TT-y3i" eventType="touchUpInside" id="vaz-mw-NNB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nds-Ek-ePb">
                                 <rect key="frame" x="75" y="357" width="194" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="32"/>
                                 <state key="normal" title="I-Land By: IU"/>
+                                <connections>
+                                    <action selector="IU:" destination="3w0-TT-y3i" eventType="touchUpInside" id="7rM-hC-FcG"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6xY-Hr-qea">
                                 <rect key="frame" x="32" y="505" width="381" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="28"/>
                                 <state key="normal" title="Left &amp; Right By: SEVENTEEN"/>
+                                <connections>
+                                    <action selector="seventeen:" destination="3w0-TT-y3i" eventType="touchUpInside" id="Y6P-Ph-AgN"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BTS,_Wings" translatesAutoresizingMaskIntoConstraints="NO" id="H4E-Hs-ost">
+                                <rect key="frame" x="0.0" y="603" width="240" height="184"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="i-land" translatesAutoresizingMaskIntoConstraints="NO" id="Ix3-tn-INI">
+                                <rect key="frame" x="0.0" y="603" width="240" height="184"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SEVENTEEN_Henggaræ_Online_Cover" translatesAutoresizingMaskIntoConstraints="NO" id="IPA-Jo-iLH">
+                                <rect key="frame" x="0.0" y="603" width="240" height="184"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LE8-0P-xnE">
+                                <rect key="frame" x="227" y="668" width="123" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                <state key="normal" title="N-E-X-T--&gt;"/>
+                                <connections>
+                                    <segue destination="DuN-4e-5dc" kind="show" id="rp4-zX-vw8"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="0.65526005990000002" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="XlH-oi-K6Z"/>
                     </view>
                     <navigationItem key="navigationItem" id="f3U-3X-dZF"/>
+                    <connections>
+                        <outlet property="iLand" destination="Ix3-tn-INI" id="u64-vo-XZ4"/>
+                        <outlet property="leftAndRight" destination="IPA-Jo-iLH" id="ebt-5P-xyz"/>
+                        <outlet property="nextPage" destination="LE8-0P-xnE" id="PzH-qb-29v"/>
+                        <outlet property="wings" destination="H4E-Hs-ost" id="clD-Wf-hTB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q4J-jl-xNN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2187" y="286"/>
+            <point key="canvasLocation" x="2186.9565217391305" y="285.9375"/>
         </scene>
-        <!--View Controller-->
+        <!--Yellow3 View Controller-->
         <scene sceneID="RBE-zE-mpu">
             <objects>
-                <viewController id="DuN-4e-5dc" sceneMemberID="viewController">
+                <viewController id="DuN-4e-5dc" customClass="yellow3ViewController" customModule="createPlaylist_NightHack4_kwk2020" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ImR-yz-g6b">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dzF-HY-zu9">
-                                <rect key="frame" x="361" y="43" width="33" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="chevron.right" catalog="system"/>
-                                <connections>
-                                    <segue destination="WRY-Rz-wuI" kind="show" id="wlY-L5-1Rp"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GC9-7E-23J">
                                 <rect key="frame" x="113" y="41" width="189" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -603,45 +796,73 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="32"/>
                                 <state key="normal" title="Love Scenario By: iKON"/>
+                                <connections>
+                                    <action selector="iKon:" destination="DuN-4e-5dc" eventType="touchUpInside" id="SLK-7g-44M"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3dw-vV-WLV">
                                 <rect key="frame" x="35" y="354" width="369" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="26"/>
                                 <state key="normal" title="Highway To Heaven By: NCT 127"/>
+                                <connections>
+                                    <action selector="nct:" destination="DuN-4e-5dc" eventType="touchUpInside" id="1kt-hx-HRs"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zKd-cz-8IW">
                                 <rect key="frame" x="35" y="501" width="366" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="32"/>
                                 <state key="normal" title="Red Flavor By: Red Velvet"/>
+                                <connections>
+                                    <action selector="redVelvet:" destination="DuN-4e-5dc" eventType="touchUpInside" id="Z44-zo-j8u"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IKON_love" translatesAutoresizingMaskIntoConstraints="NO" id="UxU-Ve-XPa">
+                                <rect key="frame" x="0.0" y="590" width="240" height="184"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="highway to heaven" translatesAutoresizingMaskIntoConstraints="NO" id="I4c-9C-1V0">
+                                <rect key="frame" x="0.0" y="590" width="240" height="184"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="redflavor" translatesAutoresizingMaskIntoConstraints="NO" id="GEn-FG-BDr">
+                                <rect key="frame" x="0.0" y="590" width="240" height="184"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dzF-HY-zu9">
+                                <rect key="frame" x="248" y="660" width="106" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                <state key="normal" title="N-E-X-T--&gt;"/>
+                                <connections>
+                                    <segue destination="WRY-Rz-wuI" kind="show" id="wlY-L5-1Rp"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="0.69919199489999995" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="0kR-f4-y8J"/>
                     </view>
                     <navigationItem key="navigationItem" id="dms-23-Xsn"/>
+                    <connections>
+                        <outlet property="highway" destination="I4c-9C-1V0" id="Vfe-qf-U4V"/>
+                        <outlet property="loveScenario" destination="UxU-Ve-XPa" id="rdb-de-dja"/>
+                        <outlet property="nextPage" destination="dzF-HY-zu9" id="QwP-aW-xAM"/>
+                        <outlet property="redFlavor" destination="GEn-FG-BDr" id="uaG-fv-JEH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ey8-EG-ntN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2861" y="286"/>
+            <point key="canvasLocation" x="2860.8695652173915" y="285.9375"/>
         </scene>
-        <!--View Controller-->
+        <!--Yellow4 View Controller-->
         <scene sceneID="yvF-CQ-R1M">
             <objects>
-                <viewController id="WRY-Rz-wuI" sceneMemberID="viewController">
+                <viewController id="WRY-Rz-wuI" customClass="yellow4ViewController" customModule="createPlaylist_NightHack4_kwk2020" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IVj-iW-2tC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kMI-ep-w0l">
-                                <rect key="frame" x="355" y="42" width="39" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="chevron.right" catalog="system"/>
-                                <connections>
-                                    <segue destination="DOY-Tw-Kct" kind="show" id="Mh7-EC-Uwc"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aKO-lj-Gtr">
                                 <rect key="frame" x="113" y="39" width="189" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -662,45 +883,73 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="32"/>
                                 <state key="normal" title="Outro : Ego By: BTS"/>
+                                <connections>
+                                    <action selector="bts:" destination="WRY-Rz-wuI" eventType="touchUpInside" id="Z4b-ce-N4z"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pHN-Kz-fnd">
                                 <rect key="frame" x="20" y="345" width="375" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="32"/>
                                 <state key="normal" title="Take Me Higher By: A.C.E"/>
+                                <connections>
+                                    <action selector="ace:" destination="WRY-Rz-wuI" eventType="touchUpInside" id="LAb-nb-Dsp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QAp-AS-d6S">
                                 <rect key="frame" x="68" y="478" width="278" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="32"/>
                                 <state key="normal" title="Answer By: ATEEZ"/>
+                                <connections>
+                                    <action selector="ateez:" destination="WRY-Rz-wuI" eventType="touchUpInside" id="pBU-W5-L2k"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mots" translatesAutoresizingMaskIntoConstraints="NO" id="VRk-PP-QHF">
+                                <rect key="frame" x="0.0" y="583" width="240" height="184"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="take me higher" translatesAutoresizingMaskIntoConstraints="NO" id="EE5-GY-wb8">
+                                <rect key="frame" x="0.0" y="583" width="240" height="184"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="answer ateez" translatesAutoresizingMaskIntoConstraints="NO" id="Q6a-k7-FAd">
+                                <rect key="frame" x="0.0" y="583" width="240" height="184"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kMI-ep-w0l">
+                                <rect key="frame" x="233" y="652" width="122" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                <state key="normal" title="N-E-X-T--&gt;"/>
+                                <connections>
+                                    <segue destination="DOY-Tw-Kct" kind="show" id="Mh7-EC-Uwc"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="0.65526005990000002" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="YV3-MT-7XV"/>
                     </view>
                     <navigationItem key="navigationItem" id="kuv-E8-uAZ"/>
+                    <connections>
+                        <outlet property="answer" destination="Q6a-k7-FAd" id="vSJ-g2-yZP"/>
+                        <outlet property="ego" destination="VRk-PP-QHF" id="icR-Xp-LMS"/>
+                        <outlet property="nextPage" destination="kMI-ep-w0l" id="FwX-zW-faW"/>
+                        <outlet property="takeMeHigher" destination="EE5-GY-wb8" id="k34-yA-Mk8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kj8-oG-rl8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3595.652173913044" y="285.9375"/>
         </scene>
-        <!--View Controller-->
+        <!--Yellow5 View Controller-->
         <scene sceneID="oy0-LM-I56">
             <objects>
-                <viewController id="DOY-Tw-Kct" sceneMemberID="viewController">
+                <viewController id="DOY-Tw-Kct" customClass="yellow5ViewController" customModule="createPlaylist_NightHack4_kwk2020" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="86O-lL-3lh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cd-JE-2e7">
-                                <rect key="frame" x="362" y="39" width="39" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="chevron.right" catalog="system"/>
-                                <connections>
-                                    <segue destination="MQM-IW-WnG" kind="show" id="X1P-xH-yXU"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OEr-b8-8Pc">
                                 <rect key="frame" x="113" y="45" width="189" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -721,33 +970,73 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="32"/>
                                 <state key="normal" title="Go Go By: BTS"/>
+                                <connections>
+                                    <action selector="bts:" destination="DOY-Tw-Kct" eventType="touchUpInside" id="B5K-WE-4sp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uAf-CS-za8">
                                 <rect key="frame" x="76" y="334" width="228" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="32"/>
                                 <state key="normal" title="HOME By: BTS"/>
+                                <connections>
+                                    <action selector="bts1:" destination="vD8-fe-oTA" eventType="touchUpInside" id="9uC-uL-hcD"/>
+                                    <action selector="bts1:" destination="DOY-Tw-Kct" eventType="touchUpInside" id="nyn-FK-XA2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jhe-H6-edL">
                                 <rect key="frame" x="17" y="457" width="381" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="27"/>
                                 <state key="normal" title="Forever Young By: BLACKPINK"/>
+                                <connections>
+                                    <action selector="bp:" destination="DOY-Tw-Kct" eventType="touchUpInside" id="byu-W8-nQ4"/>
+                                    <action selector="bp:" destination="vD8-fe-oTA" eventType="touchUpInside" id="uWC-Mo-jFM"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="her" translatesAutoresizingMaskIntoConstraints="NO" id="PEo-ey-bG8">
+                                <rect key="frame" x="4" y="578" width="271" height="193"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BTS_-_Map_of_the_Soul_Persona" translatesAutoresizingMaskIntoConstraints="NO" id="I4k-YJ-TuM">
+                                <rect key="frame" x="0.0" y="578" width="271" height="193"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Black_Pink_-_Square_Up_artwork" translatesAutoresizingMaskIntoConstraints="NO" id="gS2-rG-RfZ">
+                                <rect key="frame" x="0.0" y="578" width="271" height="193"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cd-JE-2e7">
+                                <rect key="frame" x="257" y="650" width="118" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                <state key="normal" title="N-E-X-T--&gt;"/>
+                                <connections>
+                                    <action selector="nextPage:" destination="vD8-fe-oTA" eventType="touchUpInside" id="1Cy-3y-FTF"/>
+                                    <segue destination="MQM-IW-WnG" kind="show" id="X1P-xH-yXU"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="0.69919199489999995" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="ud1-JC-fZH"/>
                     </view>
                     <navigationItem key="navigationItem" id="7oV-sq-bg0"/>
+                    <connections>
+                        <outlet property="forever" destination="gS2-rG-RfZ" id="gWs-gH-Pjx"/>
+                        <outlet property="goGo" destination="PEo-ey-bG8" id="Ffc-pn-F1s"/>
+                        <outlet property="home" destination="I4k-YJ-TuM" id="rjT-tC-vBX"/>
+                        <outlet property="nextPage" destination="4cd-JE-2e7" id="VMV-eh-bxe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qqa-PV-RY4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="vD8-fe-oTA" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="4280" y="286"/>
+            <point key="canvasLocation" x="4279.7101449275369" y="285.9375"/>
         </scene>
-        <!--View Controller-->
+        <!--Yellow6 View Controller-->
         <scene sceneID="CbU-jI-vXk">
             <objects>
-                <viewController id="MQM-IW-WnG" sceneMemberID="viewController">
+                <viewController id="MQM-IW-WnG" customClass="yellow6ViewController" customModule="createPlaylist_NightHack4_kwk2020" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fbx-IL-lhJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -820,14 +1109,6 @@
                                     <action selector="stayGold:" destination="TeT-3K-b4g" eventType="touchUpInside" id="GjL-ox-VMo"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="urj-LY-ceF">
-                                <rect key="frame" x="348" y="33" width="33" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="chevron.right" catalog="system"/>
-                                <connections>
-                                    <segue destination="hAe-nJ-xrD" kind="show" id="tLL-Rk-4wT"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FjM-TQ-3gK">
                                 <rect key="frame" x="14" y="33" width="35" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -837,17 +1118,28 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BTS,_Love_Yourself_Answer,_album_cover" translatesAutoresizingMaskIntoConstraints="NO" id="Azz-JE-zek">
-                                <rect key="frame" x="58" y="597" width="278" height="185"/>
+                                <rect key="frame" x="-18" y="603" width="278" height="185"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Faceyourself" translatesAutoresizingMaskIntoConstraints="NO" id="K1u-dW-Xms">
-                                <rect key="frame" x="45" y="594" width="305" height="191"/>
+                                <rect key="frame" x="-31" y="600" width="305" height="191"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="staygold" translatesAutoresizingMaskIntoConstraints="NO" id="hxU-9C-Kp1">
-                                <rect key="frame" x="55" y="594" width="285" height="190"/>
+                                <rect key="frame" x="-21" y="600" width="285" height="190"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="urj-LY-ceF">
+                                <rect key="frame" x="256" y="670" width="126" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
+                                <state key="normal" title="N-E-X-T--&gt;">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="hAe-nJ-xrD" kind="show" id="tLL-Rk-4wT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.39755458047945208" green="0.62136130136986301" blue="0.88495291095890416" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -857,6 +1149,7 @@
                     <connections>
                         <outlet property="bts" destination="Azz-JE-zek" id="68g-cN-tKc"/>
                         <outlet property="letGo" destination="K1u-dW-Xms" id="jqx-Xt-n7v"/>
+                        <outlet property="nextPage" destination="urj-LY-ceF" id="MIv-in-xYc"/>
                         <outlet property="stayGold" destination="hxU-9C-Kp1" id="nX7-Qo-qi9"/>
                     </connections>
                 </viewController>
@@ -916,16 +1209,6 @@
                                     <segue destination="TeT-3K-b4g" kind="show" id="Fv2-8X-gYy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="piR-Iz-BoA">
-                                <rect key="frame" x="339" y="31" width="46" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="chevron.right" catalog="system">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="lN9-aF-UVF" kind="show" id="FPD-HX-mtn"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wVZ-zL-B4T">
                                 <rect key="frame" x="121" y="62" width="189" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -934,17 +1217,28 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Halsey_-_Suga’s_Interlude" translatesAutoresizingMaskIntoConstraints="NO" id="2oo-zQ-NxD">
-                                <rect key="frame" x="20" y="578" width="370" height="183"/>
+                                <rect key="frame" x="-60" y="600" width="370" height="183"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IU_Palette_final" translatesAutoresizingMaskIntoConstraints="NO" id="2E7-y1-1uf">
-                                <rect key="frame" x="65" y="578" width="284" height="184"/>
+                                <rect key="frame" x="-15" y="600" width="284" height="184"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RM_Mono" translatesAutoresizingMaskIntoConstraints="NO" id="Y9Q-96-fwi">
-                                <rect key="frame" x="87" y="578" width="240" height="184"/>
+                                <rect key="frame" x="7" y="600" width="240" height="184"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="piR-Iz-BoA">
+                                <rect key="frame" x="255" y="670" width="120" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                <state key="normal" title="N-E-X-T--&gt;">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="lN9-aF-UVF" kind="show" id="2kM-4b-hZZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.39755458049999998" green="0.62136130140000001" blue="0.88495291099999995" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="uY7-mC-qft"/>
@@ -953,6 +1247,7 @@
                     <connections>
                         <outlet property="endingScene" destination="2E7-y1-1uf" id="ukm-hY-RCv"/>
                         <outlet property="interlude" destination="2oo-zQ-NxD" id="czD-BU-cgj"/>
+                        <outlet property="nextPage" destination="piR-Iz-BoA" id="eH5-ZX-qtZ"/>
                         <outlet property="uhgood" destination="Y9Q-96-fwi" id="flt-IU-HhZ"/>
                     </connections>
                 </viewController>
@@ -979,16 +1274,6 @@
                                     <segue destination="hAe-nJ-xrD" kind="show" id="3uk-to-zGJ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dc3-70-7Xk">
-                                <rect key="frame" x="348" y="29" width="46" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="chevron.right" catalog="system">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="al6-6D-MGC" kind="show" id="10K-lK-Hg0"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dTW-4G-9R7">
                                 <rect key="frame" x="120" y="56" width="189" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -996,21 +1281,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KZY-xV-QJi">
-                                <rect key="frame" x="20" y="480" width="286" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="32"/>
-                                <state key="normal" title="Stay Here By: Gaho">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="gaho:" destination="lN9-aF-UVF" eventType="touchUpInside" id="kIL-yZ-gj0"/>
-                                </connections>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BZ6-ID-xqI">
-                                <rect key="frame" x="81" y="608" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iv5-qt-1TW">
                                 <rect key="frame" x="-5" y="180" width="419" height="118"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1033,20 +1303,60 @@
                                     <action selector="goblin:" destination="lN9-aF-UVF" eventType="touchUpInside" id="uWp-mZ-LLW"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KZY-xV-QJi">
+                                <rect key="frame" x="20" y="480" width="286" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="32"/>
+                                <state key="normal" title="Stay Here By: Gaho">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="gaho:" destination="lN9-aF-UVF" eventType="touchUpInside" id="kIL-yZ-gj0"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mots" translatesAutoresizingMaskIntoConstraints="NO" id="BZ6-ID-xqI">
+                                <rect key="frame" x="-27" y="586" width="287" height="186"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Goblin_OST_Pack_1" translatesAutoresizingMaskIntoConstraints="NO" id="YHr-Hm-kLd">
+                                <rect key="frame" x="-27" y="586" width="287" height="186"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stayhere" translatesAutoresizingMaskIntoConstraints="NO" id="bpK-Ic-Shj">
+                                <rect key="frame" x="-27" y="586" width="287" height="186"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dc3-70-7Xk">
+                                <rect key="frame" x="235" y="639" width="128" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                <state key="normal" title="N-E-X-T--&gt;">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="al6-6D-MGC" kind="show" id="10K-lK-Hg0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.39755458049999998" green="0.62136130140000001" blue="0.88495291099999995" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="7tc-9a-LAH"/>
                     </view>
                     <navigationItem key="navigationItem" id="odr-Ux-b9i"/>
+                    <connections>
+                        <outlet property="eternal" destination="BZ6-ID-xqI" id="7P3-MX-GZH"/>
+                        <outlet property="nextPage" destination="Dc3-70-7Xk" id="MMx-xn-fMT"/>
+                        <outlet property="stayHere" destination="bpK-Ic-Shj" id="AXw-uw-b2d"/>
+                        <outlet property="stayWithMe" destination="YHr-Hm-kLd" id="sAc-Sk-nDd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KJy-Sv-2Ro" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2861" y="-396"/>
+            <point key="canvasLocation" x="2860.8695652173915" y="-396.42857142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--Blue4 View Controller-->
         <scene sceneID="bUc-8P-CU6">
             <objects>
-                <viewController id="al6-6D-MGC" sceneMemberID="viewController">
+                <viewController id="al6-6D-MGC" customClass="blue4ViewController" customModule="createPlaylist_NightHack4_kwk2020" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bk2-ez-5gH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1062,16 +1372,6 @@
                                     <segue destination="lN9-aF-UVF" kind="show" id="bMd-0s-Mk1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Lf-JI-Ujy">
-                                <rect key="frame" x="328" y="25" width="46" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="chevron.right" catalog="system">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="SOS-RW-8Rc" kind="show" id="0zy-7V-wcF"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jCj-Rg-kdC">
                                 <rect key="frame" x="27" y="210" width="362" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1079,6 +1379,9 @@
                                 <state key="normal" title="Winter Flower By: Younha, RM">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="younha:" destination="al6-6D-MGC" eventType="touchUpInside" id="V7F-6v-FcD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQD-jb-PF7">
                                 <rect key="frame" x="25" y="350" width="364" height="56"/>
@@ -1087,6 +1390,9 @@
                                 <state key="normal" title="Louder Than Bombs By: BTS">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="bts:" destination="al6-6D-MGC" eventType="touchUpInside" id="I6j-Kq-ckA"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5zb-Io-5o4">
                                 <rect key="frame" x="20" y="481" width="364" height="53"/>
@@ -1095,6 +1401,9 @@
                                 <state key="normal" title="First Time In Love By: Mugamak">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="mugamak:" destination="al6-6D-MGC" eventType="touchUpInside" id="l4k-2h-cRu"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tTI-D9-GqN">
                                 <rect key="frame" x="108" y="31" width="189" height="54"/>
@@ -1103,34 +1412,53 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Winter_Flower_Cover" translatesAutoresizingMaskIntoConstraints="NO" id="PUF-sB-vkd">
+                                <rect key="frame" x="-33" y="579" width="287" height="186"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mots" translatesAutoresizingMaskIntoConstraints="NO" id="Igo-Xf-9fj">
+                                <rect key="frame" x="-33" y="579" width="287" height="186"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mugamak" translatesAutoresizingMaskIntoConstraints="NO" id="ExN-d9-EGr">
+                                <rect key="frame" x="-34" y="579" width="287" height="186"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Lf-JI-Ujy">
+                                <rect key="frame" x="253" y="642" width="131" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                <state key="normal" title="N-E-X-T--&gt;">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="SOS-RW-8Rc" kind="show" id="0zy-7V-wcF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.39755458049999998" green="0.62136130140000001" blue="0.88495291099999995" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="FbM-Ke-WMD"/>
                     </view>
                     <navigationItem key="navigationItem" id="GYO-RP-6mw"/>
+                    <connections>
+                        <outlet property="firstTimeInLove" destination="ExN-d9-EGr" id="W9G-Sx-u9e"/>
+                        <outlet property="louderThanBombs" destination="Igo-Xf-9fj" id="pfW-xX-xd1"/>
+                        <outlet property="nextPage" destination="1Lf-JI-Ujy" id="z6p-x3-lPz"/>
+                        <outlet property="winterFlower" destination="PUF-sB-vkd" id="Tog-Gy-cce"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hia-KF-2hg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3595.652173913044" y="-396.42857142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--Blue5 View Controller-->
         <scene sceneID="QGw-Wa-zkf">
             <objects>
-                <viewController id="SOS-RW-8Rc" sceneMemberID="viewController">
+                <viewController id="SOS-RW-8Rc" customClass="blue5ViewController" customModule="createPlaylist_NightHack4_kwk2020" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="y16-9Y-6IE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qMR-9p-LrP">
-                                <rect key="frame" x="348" y="39" width="46" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="chevron.right" catalog="system">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="IFz-FM-vMk" kind="show" id="4Ma-Uq-0xf"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FO4-d3-8bN">
                                 <rect key="frame" x="20" y="39" width="35" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1156,6 +1484,9 @@
                                 <state key="normal" title="Sorry By: The Rose">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="theRose:" destination="SOS-RW-8Rc" eventType="touchUpInside" id="AtT-ZS-KeG"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dUc-6L-wya">
                                 <rect key="frame" x="32" y="504" width="275" height="62"/>
@@ -1164,6 +1495,9 @@
                                 <state key="normal" title="If You By: Big Bang">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="bigbang:" destination="SOS-RW-8Rc" eventType="touchUpInside" id="ThH-hU-CLA"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oMI-l7-Jun">
                                 <rect key="frame" x="32" y="204" width="350" height="62"/>
@@ -1172,16 +1506,48 @@
                                 <state key="normal" title="I Miss You By: Mamamoo">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="mamamoo:" destination="SOS-RW-8Rc" eventType="touchUpInside" id="jhJ-v3-7Qe"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="i miss you" translatesAutoresizingMaskIntoConstraints="NO" id="uYQ-ZX-VPs">
+                                <rect key="frame" x="-23" y="603" width="287" height="186"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="the rose" translatesAutoresizingMaskIntoConstraints="NO" id="qqc-Ge-38B">
+                                <rect key="frame" x="-23" y="603" width="287" height="186"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bang" translatesAutoresizingMaskIntoConstraints="NO" id="myi-fH-OD7">
+                                <rect key="frame" x="-23" y="603" width="287" height="186"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qMR-9p-LrP">
+                                <rect key="frame" x="255" y="652" width="127" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                <state key="normal" title="N-E-X-T--&gt;">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="IFz-FM-vMk" kind="show" id="4Ma-Uq-0xf"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.39755458049999998" green="0.62136130140000001" blue="0.88495291099999995" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="oB7-0v-lHz"/>
                     </view>
                     <navigationItem key="navigationItem" id="5KR-1t-SYf"/>
+                    <connections>
+                        <outlet property="iMIssYou" destination="uYQ-ZX-VPs" id="QPT-d9-QvU"/>
+                        <outlet property="ifYou" destination="myi-fH-OD7" id="v4l-ux-sNC"/>
+                        <outlet property="nextPage" destination="qMR-9p-LrP" id="XZI-jb-eO0"/>
+                        <outlet property="sorry" destination="qqc-Ge-38B" id="IWS-NE-YGJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eYt-jR-p9R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4281" y="-396"/>
+            <point key="canvasLocation" x="4279.7101449275369" y="-396.42857142857139"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="fkt-uC-6kU">
@@ -1219,31 +1585,65 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="10K-lK-Hg0"/>
-        <segue reference="FPD-HX-mtn"/>
+        <segue reference="7tH-RA-mnF"/>
+        <segue reference="uul-j3-9Ie"/>
+        <segue reference="2kM-4b-hZZ"/>
         <segue reference="3uk-to-zGJ"/>
         <segue reference="Fv2-8X-gYy"/>
         <segue reference="zYQ-tn-pTA"/>
-        <segue reference="rp4-zX-vw8"/>
-        <segue reference="a0y-l0-JGp"/>
-        <segue reference="Cx3-55-VlH"/>
+        <segue reference="XdH-Ni-Qcl"/>
+        <segue reference="vSG-2z-bml"/>
+        <segue reference="ha6-7M-cym"/>
         <segue reference="R2O-CS-tTU"/>
         <segue reference="lah-OS-mgF"/>
-        <segue reference="gnR-94-GD2"/>
-        <segue reference="oE7-9S-wZx"/>
-        <segue reference="UFC-4Q-sm5"/>
+        <segue reference="fYN-lu-LKF"/>
+        <segue reference="onB-13-KgQ"/>
+        <segue reference="YJ2-GQ-5s4"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="BTS,_Love_Yourself_Answer,_album_cover" width="300" height="300"/>
+        <image name="BTS,_Wings" width="300" height="300"/>
+        <image name="BTS_-_Map_of_the_Soul_Persona" width="300" height="300"/>
+        <image name="Black_Pink_-_Square_Up_artwork" width="300" height="300"/>
+        <image name="Block_B_Yesterday_cover_art" width="1400" height="1400"/>
         <image name="Faceyourself" width="268" height="268"/>
+        <image name="Goblin_OST_Pack_1" width="500" height="500"/>
         <image name="Halsey_-_Suga’s_Interlude" width="300" height="300"/>
+        <image name="IKON_love" width="316" height="316"/>
         <image name="IU_Palette_final" width="316" height="316"/>
+        <image name="IU_–_Bbibbi" width="300" height="300"/>
+        <image name="Love_Yourself_Tear_Cover" width="316" height="316"/>
         <image name="RM_Mono" width="300" height="300"/>
+        <image name="Red_Velvet_-_Happiness" width="300" height="300"/>
+        <image name="SEVENTEEN_Henggaræ_Online_Cover" width="1200" height="1200"/>
         <image name="Screen Shot 2020-07-09 at 5.22.40 PM" width="920" height="908"/>
         <image name="Screen Shot 2020-07-09 at 5.37.25 PM" width="904" height="876"/>
+        <image name="Twice_-_Feel_Special" width="300" height="300"/>
+        <image name="Winter_Flower_Cover" width="1197" height="1197"/>
+        <image name="answer ateez" width="956" height="948"/>
+        <image name="bang" width="480" height="480"/>
+        <image name="boombayah" width="220" height="220"/>
+        <image name="cherry bomb" width="500" height="500"/>
         <image name="chevron.left" catalog="system" width="96" height="128"/>
-        <image name="chevron.right" catalog="system" width="96" height="128"/>
+        <image name="dope" width="316" height="316"/>
+        <image name="energetic" width="1400" height="1400"/>
+        <image name="her" width="355" height="355"/>
+        <image name="highway to heaven" width="225" height="225"/>
+        <image name="hip" width="1000" height="1000"/>
+        <image name="i miss you" width="300" height="300"/>
+        <image name="i-land" width="600" height="600"/>
+        <image name="levantar" width="225" height="225"/>
+        <image name="love shot" width="714" height="800"/>
+        <image name="mots" width="1469" height="1469"/>
+        <image name="mugamak" width="500" height="500"/>
+        <image name="not today" width="640" height="638"/>
         <image name="paperplane" catalog="system" width="128" height="121"/>
+        <image name="pentagon" width="225" height="225"/>
+        <image name="redflavor" width="225" height="225"/>
         <image name="staygold" width="500" height="500"/>
+        <image name="stayhere" width="474" height="474"/>
+        <image name="take me higher" width="1000" height="1000"/>
+        <image name="the rose" width="720" height="720"/>
+        <image name="very nice" width="500" height="500"/>
     </resources>
 </document>

@@ -1,5 +1,5 @@
 //
-//  blue3ViewController.swift
+//  purple4ViewController.swift
 //  createPlaylist NightHack4 kwk2020
 //
 //  Created by Isabelle Heng on 7/14/20.
@@ -8,49 +8,45 @@
 
 import UIKit
 
-class blue3ViewController: UIViewController {
+class purple4ViewController: UIViewController {
 
+    @IBOutlet var hip: UIImageView!
     
-    @IBOutlet var eternal: UIImageView!
+    @IBOutlet var bangBang: UIImageView!
     
-    @IBOutlet var stayWithMe: UIImageView!
-    
-    @IBOutlet var stayHere: UIImageView!
+    @IBOutlet var cypher: UIImageView!
     
     @IBOutlet var nextPage: UIButton!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        eternal.isHidden = true
-        stayWithMe.isHidden = true
-        stayHere.isHidden = true
+        hip.isHidden = true
+        bangBang.isHidden = true
+        cypher.isHidden = true
         nextPage.isHidden = true
-        
 
         // Do any additional setup after loading the view.
     }
     
-
     @IBAction func bts(_ sender: Any) {
-        eternal.isHidden = false
-        stayWithMe.isHidden = true
-        stayHere.isHidden = true
+        hip.isHidden = true
+        bangBang.isHidden = true
+        cypher.isHidden = false
         nextPage.isHidden = false
     }
     
-    @IBAction func goblin(_ sender: Any) {
-        eternal.isHidden = true
-        stayWithMe.isHidden = false
-        stayHere.isHidden = true
+    @IBAction func mamamoo(_ sender: Any) {
+        hip.isHidden = false
+        bangBang.isHidden = true
+        cypher.isHidden = true
         nextPage.isHidden = false
     }
+    @IBAction func bigBang(_ sender: Any) {
+        hip.isHidden = true
+        bangBang.isHidden = false
+        cypher.isHidden = true
+        nextPage.isHidden = false
+
     
-    @IBAction func gaho(_ sender: Any) {
-        eternal.isHidden = true
-        stayWithMe.isHidden = true
-        stayHere.isHidden = false
-        nextPage.isHidden = false
-    }
     /*
     // MARK: - Navigation
 
@@ -61,4 +57,5 @@ class blue3ViewController: UIViewController {
     }
     */
 
+}
 }
